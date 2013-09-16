@@ -1,0 +1,38 @@
+<h1>Entering a New Destination</h1>
+
+<%= link_to "Back to destinations", destinations_url %>
+
+<%= form_for @destination do |f|%>
+<p>
+	<%= f.label "Name" %><br>
+	<%= f.text_field "name" %>
+</p>
+<p>
+	<%= f.label "Country" %><br>
+	<%= f.text_field "country" %>
+</p>
+<p>
+	<%= f.label "Continent" %><br>
+	<%= f.select :category, [['Africa','africa'],['Asia','asia'],['Europe','europe'],['North America','north_america'],['South America','south_america'],['Australasia','australasia']] %>
+</p>
+<p>
+	<%= f.label "Rating" %><br>
+	<%= f.select :rating, [['1','one'], ['2','two'], ['3','three'], ['4','four'], ['5','five']] %>
+</p>
+<p>
+	<%= f.label "Cost" %><br>
+	<%= f.text_field "cost" %>
+</p>
+<p>
+	<%= f.label "Category" %><br>
+	<%= f.text_field "category" %>
+</p>
+<p>
+	<%= f.label "Description" %><br>
+	<%= f.text_field "description" %>
+</p>
+<p>
+	<%= f.submit "Save" %>
+</p>
+<% end %>
+

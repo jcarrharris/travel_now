@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  country: MyString
+  continent: MyString
+  rating: 1
+  cost: 1
+  category: MyString
+  description: MyText
+
+two:
+  name: MyString
+  country: MyString
+  continent: MyString
+  rating: 1
+  cost: 1
+  category: MyString
+  description: MyText
