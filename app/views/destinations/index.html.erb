@@ -2,19 +2,20 @@
 
 <%= link_to "Enter New Destination", "destinations/new" %>
 
+
 <ul>
 		<% @destinations.each do |destination| %>
-		<p>
+		<div class="container"> <div class="image"><p>
 		<%= image_tag(destination.photo) %>
-		</p>
+		</p></div>
 	<li><p>
 		Destination: <%= link_to destination[:name], destination_path(destination.id) %> <br>
-		Country: <%= destination[:country] %> <br>
-		Continent: <%= destination[:continent] %> <br>
 		Rating: <%= destination[:rating] %> <br>
+	<!-- 	Country: <%= destination[:country] %> <br>
+		Continent: <%= destination[:continent] %> <br>
 		Cost: <%= destination[:cost] %> <br>
 		Category: <%= destination[:category] %> <br>
-		Description: <%= destination[:description] %> <br>
-	</li></p>
+		Description: <%= destination[:description] %> <br> -->
+	</li></p></div>
 		<% end %>
 </ul>
