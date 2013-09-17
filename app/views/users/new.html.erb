@@ -1,7 +1,9 @@
+<html class= "landing-page">
 <h1>Sign Up Page</h1>
 
 
 <%= form_for @user do |f| %>
+  <dev class="input_area">
   <% if @user.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>
@@ -25,4 +27,6 @@
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions"><%= f.submit %></div>
+</dev>
 <% end %>
+</html>

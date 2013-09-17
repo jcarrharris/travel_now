@@ -1,3 +1,133 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.landing-page {
+	background: url(travel.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.container{
+	box-sizing: border-box;
+	color: rgb(51, 51, 51);
+	display: block;
+	font-family: Lato, Calibri, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	height: 388px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: relative;
+	width: 932px;
+}
+
+.top_bar{
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgba(75, 127, 127, 0.8);
+	background-image: none;
+	box-shadow: rgba(0, 0, 0, 0.2) 1px 0px 2px 0px;
+	display: block;
+	font-family: Cambria, Georgia, serif;
+	font-size: 11px;
+	font-weight: 300;
+	color: white;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: relative;
+	text-transform: uppercase;
+	width: 932px;
+	z-index: 9999;
+}
+
+.title{
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	display: block;
+	font-family: Lato, Calibri, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	height: 38px;
+	line-height: 38px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: relative;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 1px;
+	width: 892px;
+}
+
+.field {
+	color: white;
+	font-size: 20px;
+	
+}
+
+.field input {
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius: 10px;
+    background-color: light-grey;
+    opacity: .5;
+}
+
+::-webkit-input-placeholder {
+	color: rgba(75, 127, 127, 0.8);
+}
+
+.actions input {
+    box-shadow:inset 0px 1px 0px 0px #ffe0b5;    
+    background:linear-gradient(to bottom, #fbb550 5%, #f89306 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89306',GradientType=0);    
+    background-color: rgba(75, 127, 127, 0.8);  
+    border-radius:7px;    
+    border:1px solid #c97e1c;    
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:17px;
+    font-weight:bold;
+    padding:6px 11px;
+    text-decoration:none;    
+    text-shadow:0px 1px 0px #8f7f24;    
+}
+
+.actions:hover input{ 
+    background:linear-gradient(to bottom, #f89306 5%, #fbb450 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f89306', endColorstr='#fbb450',GradientType=0);
+    background-color:#f89306;
+    cursor: pointer;
+}
+
+.action:active input{
+    position:relative;
+    top:1px;
+}
+
+.input_area{
+	margin-left:300px;
+	margin-right:auto;
+}

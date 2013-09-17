@@ -1,5 +1,8 @@
 class SessionsController < ApplicationController
   def new
+    if session[:user_id] != nil
+      redirect_to destinations_url
+    end
   end
 
   def create
@@ -15,6 +18,6 @@ class SessionsController < ApplicationController
 
   def destroy
   	session[:user_id] = nil
-    redirect_to products_url, :notice => "Logged out!"
+    redirect_to new_session_url, :notice => "Logged out!"
   end
 end
