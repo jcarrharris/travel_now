@@ -1,6 +1,11 @@
 <html class= "landing-page">
-<h1>Sign Up Page</h1>
+<head>
 
+<title>Sign up</title>
+
+</head>
+
+<h1 class="title"> Sign up Page </h1>
 
 <%= form_for @user do |f| %>
   <dev class="input_area">
@@ -16,15 +21,15 @@
   <% end %>
   <div class="field">
     <%= f.label :email %><br/>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, class: "email" %>
   </div>
   <div class="field">
     <%= f.label :password %><br/>
-    <%= f.password_field :password %>
+    <%= f.password_field :password, class: "password" %>
   </div>
   <div class="field">
     <%= f.label :password_confirmation %><br/>
-    <%= f.password_field :password_confirmation %>
+    <%= f.password_field :password_confirmation, class: "password_confirmation" %>
   </div>
   <div class="actions"><%= f.submit %></div>
 </dev>

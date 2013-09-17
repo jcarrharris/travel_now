@@ -11,13 +11,13 @@
 	<%= f.label "Name" %><br>
 	<%= f.text_field "name" %>
 </p>
-<p>
+<p class="country">
 	<%= f.label "Country" %><br>
 	<%= f.text_field "country" %>
 </p>
-<p>
+<p class="label">
 	<%= f.label "Continent" %><br>
-	<%= f.select :category, [['Africa','africa'],['Asia','asia'],['Europe','europe'],['North America','north_america'],['South America','south_america'],['Australasia','australasia']] %>
+	<%= f.select :category, [['Africa','africa'],['Asia','asia'],['Europe','europe'],['North America','north_america'],['South America','south_america'],['Australasia','australasia']], class: "continent" %>
 </p>
 <p>
 	<%= f.label "Rating" %><br>

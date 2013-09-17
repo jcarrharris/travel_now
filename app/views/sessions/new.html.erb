@@ -6,7 +6,7 @@
 		<div class="top_bar">
 			<a href= "http://www.facebook.com">Connect through Facebook</a>
 		</div>
-		<dev class="title">Travel Now!</dev>
+		<div class="title">Travel Now!</div>
 
 		<div class="input_area">
 		<%= form_tag sessions_path do %>
@@ -17,7 +17,7 @@
 
   		<div class="field">
     		<%= label_tag :password %><br/>
-    		<%= password_field_tag :password %>
+    		<%= password_field_tag :password,  params[:password], placeholder: 'password', class: "infield"%>
   		</div>
 
   		<div class="actions"><%= submit_tag "Log in" %></div>
