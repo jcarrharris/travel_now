@@ -12,16 +12,26 @@
 <% number_of_likes=0%>
 <% for i in 1..User.count %>
 	<% if User.find(i).likes?(@destination) %>
+		<% liker = User.find(i).email %>
+		<% if (liker != "You") %>
+			<% liker = User.find(i).email %>
+		<% end %>
+		<% if (liker == current_user.email) %>
+			<% liker = "You" %>
+		<% end %>
 		<% number_of_likes +=1 %>
 	<% end %>
 <% end %>
-<p>Likes for this destination: </p> 
-<%= number_of_likes %>
+<p> <%= liker %> 
+<% if number_of_likes-1 > 0 %>
+	and <%= number_of_likes-1 %> others like this 
+<% end %>
+</p>
 
 <% if current_user.likes?(@destination)%>
-	<%= link_to "UnLike this destination", unlike_destination_url %>
+	<%= link_to "Unlike", unlike_destination_url %>
 <% else %>	
-	<%= link_to "Like this destination", like_destination_url %>
+	<%= link_to "Like", like_destination_url %>
 <% end %>	
 
   <h3>Reviews</h3>
