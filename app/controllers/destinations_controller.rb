@@ -46,5 +46,19 @@ class DestinationsController < ApplicationController
 
 		redirect_to destinations_url
 	end
+
+	def like
+		@destination = Destination.find(params[:id])
+		current_user.like!(@destination)
+
+		redirect_to destination_url
+	end
+
+	def unlike
+		@destination = Destination.find(params[:id])
+		current_user.unlike!(@destination)
+
+		redirect_to destination_url
+	end
 	
 end
