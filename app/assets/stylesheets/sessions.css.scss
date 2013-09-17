@@ -101,6 +101,10 @@
 .input_area{
 	margin-left: 300px;
 	margin-right:auto;
+
+	.error_messages {
+		color: blue;
+	}
 }
 
 .userinfo{
