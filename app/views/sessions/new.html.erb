@@ -4,7 +4,7 @@
 
 	<div class="container">
 		<div class="top_bar">
-			<a href= "http://www.facebook.com">Connect through Facebook</a>
+			<!-- <a href= "http://www.facebook.com">Connect through Facebook</a> -->
 		</div>
 		<div class="title">Travel Now!</div>
 
@@ -17,10 +17,10 @@
 
   		<div class="field">
     		<%= label_tag :password %><br/>
-    		<%= password_field_tag :password,  params[:password], placeholder: 'password', class: "infield"%>
+    		<%= password_field_tag :password,  params[:password], placeholder: 'password', class: "infield"%><br/>
   		</div>
 
-  		<div class="actions"><%= submit_tag "Log in" %></div>
+  		<br/><div class="actions"><%= submit_tag "Log in" %></div>
 		<% end %>	
 		</div>
 	</div>
