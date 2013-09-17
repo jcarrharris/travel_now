@@ -1,14 +1,22 @@
 TravelNow::Application.routes.draw do
 
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/destroy"
+
   get "users/new"
 
   get "users/create"
 
   resources :destinations
 
-  root :to => "user#index"
+  root :to => "sessions#new"
 
   resources :users, :only => [:new, :create, :index]
+
+  resources :sessions, :only => [:new, :create, :destroy]
 
   
   # The priority is based upon order of creation:
