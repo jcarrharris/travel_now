@@ -1,5 +1,11 @@
 TravelNow::Application.routes.draw do
 
+  get "reviews/show"
+
+  get "reviews/new"
+
+  get "reviews/edit"
+
   get "sessions/new"
 
   get "sessions/create"
@@ -10,7 +16,9 @@ TravelNow::Application.routes.draw do
 
   get "users/create"
 
-  resources :destinations
+  resources :destinations do
+    resources :reviews, :except => [:index]
+  end
 
   root :to => "sessions#new"
 

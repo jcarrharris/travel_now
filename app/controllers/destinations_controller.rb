@@ -5,7 +5,11 @@ class DestinationsController < ApplicationController
 	end
 
 	def show
-		@destinations = Destination.find(params[:id])
+		@destination = Destination.find(params[:id])
+
+		if current_user
+   		 @review = @destination.reviews.build
+  		end
 	end
 
 	def new
