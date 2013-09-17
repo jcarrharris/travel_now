@@ -42,7 +42,7 @@
 }
 
 .field input {
-    color: dark-grey;
+    color: #737c93;
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
@@ -54,9 +54,8 @@
 }
 
 ::-webkit-input-placeholder {
-	// color: rgba(75, 127, 127, 0.8);
-	color: light-grey;
-	font-size: 15px;
+	color: #9598a6;
+	font-size: 20px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -96,6 +95,7 @@
 .action:active input{
     position:relative;
     top:1px;
+    background-color: #af5422;
 }
 
 .input_area{
