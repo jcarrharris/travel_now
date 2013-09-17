@@ -5,10 +5,10 @@
 
 </head>
 
-<h1 class="title"> Sign up Page </h1>
+<div class="title"> Sign up Page </div>
 
 <%= form_for @user do |f| %>
-  <dev class="input_area">
+  <div class="input_area">
   <% if @user.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>
@@ -21,17 +21,17 @@
   <% end %>
   <div class="field">
     <%= f.label :email %><br/>
-    <%= f.text_field :email, class: "email" %>
+    <%= f.text_field :email, placeholder: 'email', class: "email" %><br/><br/>
   </div>
   <div class="field">
     <%= f.label :password %><br/>
-    <%= f.password_field :password, class: "password" %>
+    <%= f.password_field :password, class: "password", placeholder: 'password', class: "infield" %><br/><br/>
   </div>
   <div class="field">
     <%= f.label :password_confirmation %><br/>
-    <%= f.password_field :password_confirmation, class: "password_confirmation" %>
+    <%= f.password_field :password_confirmation, placeholder: 'confirm password', class: "password_confirmation" %><br/><br/>
   </div>
-  <div class="actions"><%= f.submit %></div>
+  <div class="actions"><%= submit_tag "Sign up" %></div>
 </dev>
 <% end %>
 </html>
