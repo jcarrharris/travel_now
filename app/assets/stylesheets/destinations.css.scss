@@ -6,7 +6,7 @@ h1 {
 display: inline;
 position: relative;
 letter-spacing: 2px; /* This will push it together giving us a nice 3D vibe */
-color: rgba(0,0,255,0.5); /* This will give us a blue at 50% opacity */
+color: #333; /* This will give us a blue at 50% opacity */
 margin-right: 10px;
 margin-top: 10px
 }
@@ -49,4 +49,5 @@ margin-top: 10px
   line-height: 18px;
   width: 1270px;
 }
+
 
