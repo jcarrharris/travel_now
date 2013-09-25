@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController
+  class ReviewsController < ApplicationController
  before_filter :load_destination
 
   def show
